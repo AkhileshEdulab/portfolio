@@ -1,0 +1,119 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem;
+    height: 80%;
+    background-color: #e9ecef; /* Light background color */
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Space between text and image */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+   
+    margin: 0 auto;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    padding: 2rem;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .about-image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Control image size */
+    border-radius: 8px; /* Rounded corners for the image */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column; /* Stack text and image vertically on smaller screens */
+      text-align: center;
+    }
+  
+    .about-text {
+      padding: 1rem;
+    }
+  
+    .about-image img {
+      max-width: 300px; /* Adjust image size */
+      margin-top: 1rem; /* Add space above the image */
+    }
+  
+    .about-text h2 {
+      font-size: 2rem;
+    }
+  
+    .about-text p {
+      font-size: 1rem;
+    }
+    
+  
+    .btn {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-image img {
+      max-width: 250px; /* Adjust image size for very small screens */
+    }
+  
+    .about-text h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-text p {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      font-size: 0.8rem;
+    }
+  }
+  
+
+
+  
+
+
+
+
+
+
+  

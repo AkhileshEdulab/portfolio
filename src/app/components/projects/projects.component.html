@@ -1,0 +1,18 @@
+
+  
+
+      <section class="projects">
+        <div class="projects-content">
+          <h2>My Projects</h2>
+          <div class="projects-grid">
+            <div class="project-item" *ngFor="let project of projects">
+              <img *ngIf="project.imageUrl" [src]="project.imageUrl" alt="{{ project.name }}">
+              <div class="project-info">
+                <h3>{{project.name}}</h3>
+                <p>{{project.description}}</p>
+                <a routerLink="/project-list" class="btn">View Project</a>
+              </div>
+            </div>
+            </div>
+          </div>
+      </section>

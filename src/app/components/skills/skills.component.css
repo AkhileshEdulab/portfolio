@@ -1,0 +1,93 @@
+.skills {
+    padding: 4rem 1rem;
+    background-color: #f8f9fa; /* Light background color */
+  }
+  
+  .skills-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .skills-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Space between skill items */
+    justify-content: center;
+  }
+  
+  .skill-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 2rem;
+    max-width: 300px;
+    width: 100%;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  }
+  
+  .skill-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-item ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skill-item li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skills-list {
+      flex-direction: column; /* Stack skill items vertically on smaller screens */
+      gap: 1rem;
+    }
+  
+    .skill-item {
+      max-width: 90%; /* Full width for skill items on small screens */
+      padding: 1rem;
+    }
+  
+    .skills-content h2 {
+      font-size: 2rem;
+    }
+  
+    .skill-item h3 {
+      font-size: 1.6rem;
+    }
+  
+    .skill-item li {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .skill-item h3 {
+      font-size: 1.4rem;
+    }
+  
+    .skill-item li {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,25 @@
+
+<section class="add-project">
+    <h2>Add a New Project</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Project Name</label>
+        <input type="text" id="name" [(ngModel)]="project.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Project Description</label>
+        <textarea id="description" [(ngModel)]="project.description" name="description" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="imageUrl">Image URL (optional)</label>
+        <input type="text" id="imageUrl" [(ngModel)]="project.imageUrl" name="imageUrl">
+      </div>
+
+      <div class="form-group">
+        <label for="GitHub">GitHub URL (optional)</label>
+        <input type="text" id="githubUrl" [(ngModel)]="project.githubUrl" name="githubUrl">
+      </div>
+      <button type="submit" class="btn">Add Project</button>
+    </form>
+  </section>
+  
